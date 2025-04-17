@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>TIC TAC TOE</title>
+</head>
+<body id="containerid" class="container m-auto -mr-20 box-border flex justify-center items-center  w-screen h-screen bg-[#0c8e81]">
+ <div >
+   <div class="wrapper relative m-auto sm:lg md:2xl lg:w-5xl flex flex-col justify-center items-center gap-20 pt-20 md:gap-30 md:pt-30 lg:gap-15 lg:pt-5">
+     <h1 class="font-bold mt-5 text-center text-black text-5xl md:text-6xl">
+      __TIC__TAC__TOE__
+     </h1>
+     <div class="sidebarholder flex flex-col lg:flex-row justify-center items-center gap-20 sm:gap-30 lg:gap-15">
+      <div class="buttoncontainer leftsidebar w-70 sm:w-80 lg:w-xl font-bold text-center text-black md:7xl lg:text-8xl flex flex-wrap gap-10 justify-center items-center">
+        <button onclick="myfunc()" id="btn1" class="button rounded-xl border-3 w-15 h-15 lg:w-30 lg:h-30 bg-white">
+       
+        </button>
+         <button onclick="myfunc()" id="btn2" class="button rounded-xl border-3 w-15 h-15 lg:w-30 lg:h-30 bg-white">
+       
+        </button>
+         <button onclick="myfunc()" id="btn3" class="button rounded-xl border-3 w-15 h-15 lg:w-30 lg:h-30 bg-white">
+      
+    </button>
+     <button onclick="myfunc()" id="btn4" class="button rounded-xl border-3 w-15 h-15 lg:w-30 lg:h-30 bg-white">
+      
+    </button>
+     <button onclick="myfunc()" id="btn5" class="button rounded-xl border-3 w-15 h-15 lg:w-30 lg:h-30 bg-white">
+      
+    </button>
+     <button onclick="myfunc()" id="btn6" class="button rounded-xl border-3 w-15 h-15 lg:w-30 lg:h-30 bg-white">
+      
+    </button>
+     <button onclick="myfunc()" id="btn7" class="button rounded-xl border-3 w-15 h-15 lg:w-30 lg:h-30 bg-white">
+      
+    </button>
+     <button onclick="myfunc()" id="btn8" class="button rounded-xl border-3 w-15 h-15 lg:w-30 lg:h-30 bg-white">
+      
+    </button>
+     <button onclick="myfunc()" id="btn9" class="button rounded-xl border-3 w-15 h-15 lg:w-30 lg:h-30 bg-white">
+   
+    </button>
+    </div>
+    <div class="rightsidebar w-xl flex flex-col justify-center items-center gap-15 ">
+
+      <div class="scoreboard  w-100 text-center rounded-xl p-3 text-2xl font-bold border-2 bg-white flex justify-center items-center gap-25 text-black font-bold">
+        <div>Player O : <span id="playerO">0</span></div>
+        <div>Player X : <span id="playerX">0</span></div>
+      </div>
+      <div id="resultid" class="hidden  result text-4xl font-bold text-black"></div>
+      
+      <div id="resetgame" onclick="resetgamefunc()" class="w-40 text-center rounded-xl p-3 text-xl font-bold border-2 bg-white"><button>Reset Game</button></div>
+      <div id="playagain" onclick="playagainfunc()" class="hidden w-40 text-center rounded-xl p-3 text-xl font-bold border-2 bg-white"><button>Play Again</button></div>
+    </div>
+     </div>
+   </div>
+   <!-- <div class="linecut">
+    <div  id="012" class="rounded-xl hidden line bg-red-800 w-90 h-4 translate-x-67 -translate-y-95.5"></div>
+    <div id="345" class="rounded-xl hidden line bg-red-800 w-90 h-4 translate-x-67 -translate-y-56"></div>
+    <div id="678" class="rounded-xl hidden line bg-red-800 w-90 h-4 translate-x-67 -translate-y-16"></div>
+    <div id="036" class="rounded-xl hidden line bg-red-800 w-90 h-4 rotate-90 translate-x-27.5 -translate-y-56"></div>
+    <div id="147" class="rounded-xl hidden line bg-red-800 w-90 h-4 rotate-90 translate-x-67.5 -translate-y-57"></div>
+    <div id="258" class="rounded-xl hidden line bg-red-800 w-90 h-4 rotate-90 translate-x-107.5 -translate-y-56"></div>
+    <div id="048" class="rounded-xl hidden line bg-red-800 w-130 h-4 rotate-45 translate-x-47 -translate-y-56"></div>
+    <div id="246" class="rounded-xl hidden line bg-red-800 w-130 h-4 -rotate-45 translate-x-47 -translate-y-55"></div>
+   </div> -->
+  
+   <!-- <div class="circle rounded-full w-100 h-100 translate-x-235 -translate-y-15 bg-white"></div> -->
+ </div>
+ <audio id="myaudio" src="ting.mp3"></audio>
+
+ 
+ 
+  <script src="script.js" type="text/javascript" charset="utf-8">
+  </script>
+</body>
+
+</html>
